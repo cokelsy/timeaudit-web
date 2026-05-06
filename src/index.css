@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg-page: #F5F5F7;
+  --color-bg-card: #FFFFFF;
+  --color-bg-input: #F5F5F7;
+  --color-text-primary: #1D1D1F;
+  --color-text-secondary: #6E6E73;
+  --color-text-tertiary: #AEAEB2;
+  --color-border: #E5E5EA;
+  --color-border-focus: #3B82F6;
+  --color-unrecorded: #F3F4F6;
+  --color-brand: #3B82F6;
+  --color-brand-hover: #2563EB;
+  --color-danger: #EF4444;
+
+  --color-cat-study: #6366F1;
+  --color-cat-life: #10B981;
+  --color-cat-work: #F59E0B;
+  --color-cat-sleep: #8B8B8E;
+  --color-cat-entertainment: #EC4899;
+  --color-cat-sports: #F97316;
+
+  --font-sans: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --radius-input: 10px;
+  --radius-card: 12px;
+
+  --shadow-card: 0 1px 3px rgba(0,0,0,0.04), 0 1px 2px rgba(0,0,0,0.06);
+  --shadow-card-hover: 0 4px 12px rgba(0,0,0,0.08);
+  --shadow-modal: 0 20px 60px rgba(0,0,0,0.15), 0 0 0 1px rgba(0,0,0,0.05);
+  --shadow-dropdown: 0 8px 30px rgba(0,0,0,0.12);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-bg-page);
+  color: var(--color-text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+input::placeholder {
+  color: var(--color-text-tertiary);
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--color-border-focus);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+#root {
+  height: 100vh;
+  overflow: hidden;
+}
